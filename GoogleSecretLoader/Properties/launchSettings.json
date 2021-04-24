@@ -1,0 +1,22 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:46724",
+      "sslPort": 44370
+    }
+  },
+  "profiles": {
+    "GoogleSecretLoader": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "GoogleSecreteFilePath": "googlecredentials.json",
+        "GCP_ProjectId" : "ordinal-tractor-311703"
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
+    }
+  }
+}
