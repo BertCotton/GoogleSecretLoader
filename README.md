@@ -1,23 +1,23 @@
-﻿#GoogleSecreteLoader
+﻿# GoogleSecreteLoader
 Sample application for loading secrets from the Google secrete store and setting them in the IConfigurationBuilder
 
-#Files
-##GoogleSecretLoaderSource
+# Files
+## GoogleSecretLoaderSource
 Implements `IConfigurationSource` and calls the `GoogleSecreteLoaderProvider`
 
-##GoogleSecreteLoaderProvider
+## GoogleSecreteLoaderProvider
 Implements `ConfigurationProvider`
 This is where the secretes are read from the GCP Secrete store and set into the IConfigurationProvider
 
 
-#Required Settings
+# Required Settings
 These two environmental variables need to be set
 * GoogleSecreteFilePath = `Path to the GCP Secret File`
 * GCP_ProjectId = `project_id from the Secret File`
   
 Variable that will be loaded from the appsettings.json
 * ApplicationName = `lower case application name used as labels for the secrets`
-##GCP Secret File
+## GCP Secret File
 Json file generated as the key.
 ```json
 {
